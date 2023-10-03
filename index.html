@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./IMG/SALAfav.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo" src="./IMG/SALA.png" alt="logo" width="40">
+        </a>
+        <h1 class="soundart">Sound Art</h1>
+        <button class="menu-toggle">&#9776;</button>
+        <nav id="main-nav">
+          <ul class="nav-list">
+            <li><a class="aheader" href="index.html">Inicio</a></li>
+            <li><a class="aheader" href="salas.html">Salas</a></li>
+            <li><a class="aheader" href="servicios.html">Servicios</a></li>
+            <li><a class="aheader" href="contacto.html">Contactos</a></li>
+            <li><a class="aheader" href="catalogo.html">Catalogo</a></li>
+            <li id="crud" class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                    <a class="dropdown-item" href="instrumentos.html">Productos</a>
+                </div>
+            </li>
+            <li><a class="aheader" href="login.html">login</a></li>
+          </ul>
+        </nav>
+    </header>
+    <img id="fondo" src="./IMG/portadae.png" alt="fondo" width="300">
+    <br>
+    <br>
+    <main>
+        <article id="inicio">
+            <h2>Salas de ensayo profesionales en CABA, Buenos Aires.</h2>
+        </article>
+        <br>
+        <br>
+        <div class="fotos">
+            <div style="background-image: url(IMG/mezclador-sonido-estudio.jpg);"></div>
+            <div style="background-image: url(IMG/piano-fondo-borroso.jpg);"></div>
+            <div style="background-image: url(IMG/guitarra-acustica.jpg);"></div>
+            <div style="background-image: url(IMG/tocandoGuitarra.jpg);"></div>
+            <div style="background-image: url(IMG/salaBlancoyNegro.jpg);"></div>
+        </div>
+        <br>
+        <br>
+
+        <br>
+        <article class="parrafo">
+            <h2>3 salas con el mejor equipamiento</h2>
+            <br>
+            <p>Somos una sala de ensayo para que puedas explotar tu creatividad, grabar tu ensayo.</p>
+            <p>Equipamiento de alta gama y servicio profesional para lograr los mejores ensayos para tu banda.
+                Salas amplias y confortables. Estudio de grabación digital.
+                Piano, alquiler de instrumentos. Sala para clases.</p>
+            <p>DW, TAMA, MARSHALL, LANEY, AMPEG, VOX, ALLEN&HEATH, SHURE, GENELEC, ELECTRO-VOICE, CERVIN VEGA, MAPEX</p>
+        </article>
+    </main>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <div class="transformacion1">
+            <img src="IMG/sound art.png" alt="imagen" />
+            <img class="top" src="IMG/BATERIA.png" alt="imagen" />
+        </div>
+        <div class="transformacion2">
+            <img src="IMG/sound art.png" alt="imagen" />
+            <img class="top" src="IMG/pua.png" alt="imagen" />
+        </div>
+
+        <a href="index.html"> <img src="./IMG/SALA.png" alt="logo" width="50"></a>
+        <h3>Seguinos en nuestras redes</h3>
+        <nav>
+            <a href="https://www.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp bx-flashing bx-lg'></i></a>
+            <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook bx-flashing bx-lg'></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram bx-flashing bx-lg'></i></a>
+            <a href="https://ar.linkedin.com/" target="_blank"><i class='bx bxl-linkedin bx-flashing bx-lg'></i></a>
+        </nav>
+        <p>Derechos reservados &copy; 2023 </p>
+    </footer>
+    <script src="./JS/main.js"></script>
+    <script>if ( sessionStorage.getItem("login")!="true" ){
+        const p = document.getElementById("crud")
+    
+         p.style.display="none" 
+      }</script>
+</body>
+
+</html>
